@@ -25,7 +25,7 @@
 		<form method = "post">
       Temperature (Celsius): <input type="number" step="any" name="celsius"> <br>
 			<br><br>
-			<input type ="submit" name ="submit"  value="Guess">
+			<input type ="submit" name ="submit"  value="Submit">
 		<!-- Creates random number and outputs back if guessed correctly -->
 		<?php
       // If Button clicked
@@ -43,7 +43,7 @@
           if ($celsius >= TEMP_BOUNDARY && $celsius < SUPERNOVA) {
             echo "<br><h4>It sure is hot out! Especially with a temperature of " . $celsius . "°C</h4>";
             // If user entered a temperature below the temperature boundary
-          } else if ($celsius <= TEMP_BOUNDARY) {
+          } else if ($celsius < TEMP_BOUNDARY) {
             echo "<br><h4>It sure is cold out! Especially with a temperature of " . $celsius . "°C</h4>";
             // The user must have entered a temperature higher than a supernova...
           } else {
