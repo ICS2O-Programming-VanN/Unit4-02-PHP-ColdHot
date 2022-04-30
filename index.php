@@ -23,7 +23,7 @@
 		?>
 		<!-- Text field and button (Takes Input) -->
 		<form method = "post">
-      Temperature (Celsius): <input type="number" step="1" name="celsius"> <br>
+      Temperature (Celsius): <input type="number" step="any" name="celsius"> <br>
 			<br><br>
 			<input type ="submit" name ="submit"  value="Guess">
 		<!-- Creates random number and outputs back if guessed correctly -->
